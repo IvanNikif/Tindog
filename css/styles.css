@@ -1,0 +1,219 @@
+/* HTML element selectiors */
+body {
+  font-family: "Montserrat";
+  text-align: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat";
+  font-weight: 900;
+}
+
+h2 {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+/* going to add some padding into the bootstrap container */
+
+.container-fluid {
+  padding: 7% 15%;
+}
+
+/* section colours */
+
+.coloured-section {
+  background-color: #ff4c68;
+  color: #fff;
+}
+
+.white-section {
+  background-color: #fff;
+}
+
+/* Headings */
+.big-heading {
+  font-size: 3.5rem;
+  line-height: 1.5;
+}
+
+/* Navbar goes here */
+.navbar {
+  padding-bottom: 4.5rem;
+}
+
+/* tindog navbar brand goes here */
+.navbar-brand {
+  font-family: "Ubuntu";
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+/* navbar items: contact, pricing and download the app */
+.navbar-item {
+  padding: 0 20px;
+}
+
+.nav-link {
+  font-size: 1.2rem;
+  font-family: "Montserrat";
+  font-weight: light;
+}
+
+/* A good way of targetting only one of the selected elements is by using the ID of the element in this case we only want the code to be exectuted for the title */
+#title .container-fluid {
+  padding: 3% 15% 7%;
+  text-align: left;
+}
+
+/* buttons for download on iPhone and android */
+.download-button {
+  margin: 5% 3% 5% 0;
+}
+
+/* Iphone image settings go here and the Z INDEXING(ADVANCED CSS) */
+.dog-image {
+  position: relative;
+}
+/* had to create a new class in which I can reset the div container to relative as this is for BS5 and is needed unlike BS4 */
+.rotated {
+  width: 60%;
+  /* nagetive numbers will rotate it anticlockwise, positive will be clockwise */
+  transform: rotate(20deg);
+  position: absolute;
+  right: 30%;
+}
+
+/* 
+
+
+FEATURES
+
+
+
+*/
+
+#features {
+  padding: 7% 5%;
+  width: auto;
+  position: relative;
+  /* z-index: 1; this line of code can be removed due to stacking order, look at the flowchart */
+}
+
+/* class features (easy to use, elite clientele etc) will go here */
+
+.class-features {
+  font-size: 1.5rem;
+  padding: 5%;
+}
+.feature-box {
+  padding: 8%;
+}
+
+/* class icons settings will go here */
+.features-icons {
+  color: #ef8172;
+  /* font-size: 50px; this code is obsolete as I can use the Font Awesome times to increase the size!!!*/
+  padding-bottom: 20px;
+}
+
+.features-icons:hover {
+  color: #ff4c68;
+}
+/* paragraph edits go here */
+.para {
+  color: #8f8f8f;
+  padding: 0 15%;
+}
+
+/* Testimonials */
+
+#testimonials {
+  background-color: #ef8172;
+  font-size: 3rem;
+}
+
+.testimonials-text {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+/* Pebbles the dog image */
+
+.testimonial-image {
+  border-radius: 100%;
+  width: 10%;
+  margin: 20px;
+}
+
+/* PRESS section */
+
+#press {
+  background-color: #ef8172;
+  padding-bottom: 3%;
+}
+
+.press-logo {
+  width: 10%;
+  margin: 20px 20px 50px;
+}
+
+/* PRICING */
+#pricing {
+  padding: 100px;
+}
+
+.price-text {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+.pricing-column {
+  padding: 3% 2%;
+}
+
+.button-ch {
+  color: #ef8172 !important;
+  outline-color: #ef8172 !important;
+  outline: auto;
+}
+
+.button-ch:hover {
+  color: #fff !important;
+  background-color: #ff4c68 !important;
+}
+
+.price-button {
+  color: #fff;
+  background-color: #ef8172;
+}
+
+.price-button:hover {
+  color: #fff;
+  background-color: #ff4c68;
+}
+
+.copyright {
+  color: #8f8f8f;
+}
+
+.footer-links {
+  margin: 20px 10px;
+}
+
+/* Media query for the h1 and image goes here */
+
+@media (max-width: 1028px) {
+  #title {
+    text-align: center;
+  }
+
+  .rotated {
+    position: static;
+    transform: rotate(0);
+  }
+}
